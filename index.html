@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="TAP-VLA: Tactile Annotation Prompting for Vision Language Action Models">
+    <meta name="keywords" content="Tactile Sensing, VLA Models, Manipulation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TAP-VLA</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">TAP-VLA</h1>
+                    <h2 class="subtitle is-3 publication-subtitle">
+                        Tactile Annotation Prompting for Vision Language Action Models
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <img
+                    id="teaser"
+                    src="./static/images/tapvla_intro_figure.png"
+                    alt="TAP-VLA Overview"
+                    style="width: 100%; height: auto;"
+            >
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Vision-Language-Action (VLA) models demonstrate impressive reasoning over visual, semantic, and
+                        spatial task variations by leveraging large-scale vision and language pre-training. They remain,
+                        however, largely blind to contact forces, which seldom manifest clearly in visual feedback but
+                        are central to contact-rich manipulation. Tactile sensing measures these forces directly, but
+                        integrating it into VLAs is difficult: tactile data is absent from the large-scale corpora used
+                        to pre-train VLAs, so adding it as a new input modality induces a distribution shift that erodes
+                        the very pre-training that makes VLAs effective. We propose Tactile Annotation Prompting for
+                        Vision-Language-Action models (TAP-VLA), a simple framework that supplies tactile feedback
+                        through visual augmentation rather than architectural change. TAP-VLA extracts shear fields from
+                        visuo-tactile sensors and overlays them as spatially-grounded vectors onto the multi-view RGB
+                        images the policy already consumes, yielding a clear, interpretable tactile cue in the VLA's
+                        native observation space. Because the architecture is untouched, the approach requires no
+                        tactile pre-training, adds negligible compute, and stays close to the pre-training distribution.
+                        Across four contact-rich tasks, TAP-VLA succeeds on 78% of trials, compared to under 50% for
+                        vision-only fine-tuning and alternative tactile-fusion baselines---including tasks where the
+                        baselines perform no better than chance.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license"
+                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        This website is based on the <a href="https://nerfies.github.io/">Nerfies</a> website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
