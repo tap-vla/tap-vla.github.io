@@ -46,12 +46,9 @@
 <section class="hero teaser">
     <div class="container is-max-desktop">
         <div class="hero-body">
-            <img
-                    id="teaser"
-                    src="./static/images/tapvla_intro_figure.png"
-                    alt="TAP-VLA Overview"
-                    style="width: 100%; height: auto;"
-            >
+            <video controls autoplay muted loop playsinline width="100%">
+                <source src="./static/videos/method_overview.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
 </section>
@@ -86,6 +83,260 @@
             </div>
         </div>
         <!--/ Abstract. -->
+
+    </div>
+</section>
+
+<!-- Rollouts Section -->
+<section class="section">
+    <div class="container is-max-widescreen">
+
+        <h2 class="title is-2 has-text-centered">TAP-VLA Rollouts</h2>
+
+        <!-- Row 1 -->
+        <div class="columns">
+
+            <!-- Task 1 -->
+            <div class="column">
+                <h3 class="title is-4 has-text-centered">Medicine</h3>
+                <p style="margin-bottom: 12px;">
+                    <b>Goal:</b> If bottle is empty, place in blue bin, if full, place in orange bin.
+                </p>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/tapvla_empty.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">
+                        Successfully places <i>empty</i> bottle in blue bin.
+                    </p>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/tapvla_full.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">
+                        Successfully places <i>full</i> bottle in orange bin.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Task 2 -->
+            <div class="column">
+                <h3 class="title is-4 has-text-centered">Balance</h3>
+
+                <p style="margin-bottom: 12px;">
+                    <b>Goal:</b> Balance the white object with adjustable CoM on the blue platform.
+                </p>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/tapvla_comfar.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">
+                        Successfully balances object with CoM "far" from camera perspective.
+                    </p>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/tapvla_comnear.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">
+                        Successfully balances object with CoM "near" from camera perspective.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Row 2 -->
+        <div class="columns">
+
+            <!-- Task 3 -->
+            <div class="column">
+                <h3 class="title is-4 has-text-centered">Gear</h3>
+
+                <p style="margin-bottom: 12px;">
+                    <b>Goal:</b> Place the gear onto a peg mounted on the tabletop.
+                </p>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/tapvla_gear1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/tapvla_gear2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Task 4 -->
+            <div class="column">
+                <h3 class="title is-4 has-text-centered">Plug</h3>
+
+                <p style="margin-bottom: 12px;">
+                    <b>Goal:</b> Insert cordless plug end into socket mounted on the tabletop.
+                </p>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/tapvla_plug1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/tapvla_plug2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Rollouts Section -->
+<section class="section">
+    <div class="container is-max-widescreen">
+
+        <h2 class="title is-2 has-text-centered">Baseline Rollouts</h2>
+
+        <!-- Row 1 -->
+        <div class="columns">
+
+            <!-- Task 1 -->
+            <div class="column">
+                <h3 class="title is-4 has-text-centered">Medicine</h3>
+                <p style="margin-bottom: 12px;">
+                    <b>Goal:</b> Bottle is <i>full</i>, should be placed in orange bin.
+                </p>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_medicine.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub></h4>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_tactile_medicine.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub> + Tactile</h4>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_encoder_medicine.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub> + Encoder</h4>
+                </div>
+
+            </div>
+
+            <!-- Task 2 -->
+            <div class="column">
+                <h3 class="title is-4 has-text-centered">Balance</h3>
+
+                <p style="margin-bottom: 12px;">
+                    <b>Goal:</b> Balance the white object with adjustable CoM on the blue platform.
+                </p>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_balance.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub></h4>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_tactile_balance.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub> + Tactile</h4>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_encoder_balance.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub> + Encoder</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Row 2 -->
+        <div class="columns">
+
+            <!-- Task 3 -->
+            <div class="column">
+                <h3 class="title is-4 has-text-centered">Gear</h3>
+
+                <p style="margin-bottom: 12px;">
+                    <b>Goal:</b> Place the gear onto a peg mounted on the tabletop.
+                </p>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_gear.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub></h4>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_tactile_gear.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub> + Tactile</h4>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_encoder_gear.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub> + Encoder</h4>
+                </div>
+            </div>
+
+            <!-- Task 4 -->
+            <div class="column">
+                <h3 class="title is-4 has-text-centered">Plug</h3>
+
+                <p style="margin-bottom: 12px;">
+                    <b>Goal:</b> Insert cordless plug end into socket mounted on the tabletop.
+                </p>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_plug.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub></h4>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_tactile_plug.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub> + Tactile</h4>
+                </div>
+
+                <div class="content">
+                    <video controls autoplay muted loop playsinline width="100%">
+                        <source src="./static/videos/pi05_encoder_plug.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="title is-6 has-text-centered mb-1">π<sub>0.5</sub> + Encoder</h4>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 </section>
